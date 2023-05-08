@@ -1,0 +1,37 @@
+/* pages/teacher/check.wxss */
+.page {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button {
+    margin-top: 10px;
+}
+
+.row {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: grid;
+    border: 1px solid gray;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.lh {
+    font-weight: bold;
+}
+
+.lb {
+    font-size: small;
+}
+
+.btns {
+    display: flex;
+}
+
+.btn {
+    width: 100px;
+    
+}

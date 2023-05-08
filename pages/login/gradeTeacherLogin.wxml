@@ -1,0 +1,10 @@
+<!--pages/login/gradeTeacherLogin.wxml-->
+
+<block>
+    <view style="margin-bottom: 5px; align-items: center; text-align: center; margin-top: 50%;">Grade Director Login</view>
+    <input class="input username" type="text" placeholder="User Account" bindinput="bindAccountInput"/>
+    <br/>
+    <input class="input password" type="password" placeholder="password" bindinput="bindPwdInput"/>
+    <br/>
+    <button style="margin-top: 5px; margin-bottom: 5px; width: 40%;" bindtap="submit">Login</button>
+</block>

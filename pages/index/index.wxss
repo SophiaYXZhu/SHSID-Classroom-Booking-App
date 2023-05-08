@@ -1,0 +1,40 @@
+.building{
+    text-align: center;
+    font-size: 100rpx;
+    margin-left: 40px;
+    margin-right:40px;
+    margin-top: 100rpx;
+    margin-bottom: 100rpx;
+}
+
+.ztb{
+    border-radius: 10px;
+    background-image: url("https://636c-cloud1-3gjj5bae1cff079b-1310016235.tcb.qcloud.la/imgs/dummy2.jpg?sign=f89b20affd71d9522ca14dba18ea4efe&t=1665022526");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ztb-caption{
+    background: rgba(255, 255, 255, 0.6);
+    padding: 120rpx;
+    color:rgb(60, 60, 60);
+}
+
+.xmt{
+    border-radius: 10px;
+    background-image: url("https://636c-cloud1-3gjj5bae1cff079b-1310016235.tcb.qcloud.la/imgs/dummy1.jpg?sign=3f89db0550eb7cfd6ee810b74cf1cca5&t=1665020452");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.xmt-caption{
+    background: rgba(255, 255, 255, 0.6);
+    padding: 120rpx;
+    color: rgb(60, 60, 60);
+}
+
+.ztb-caption-tap{
+    background: rgba(255, 255, 255, 0.2);
+}

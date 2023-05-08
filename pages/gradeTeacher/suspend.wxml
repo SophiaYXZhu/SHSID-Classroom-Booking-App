@@ -1,0 +1,22 @@
+<!--pages/teacher/suspend.wxml-->
+
+<view class="title"> Suspend/Unsuspend Club Accounts </view>
+
+<view wx:if="{{clubNames.length == 0}}" style="margin-left: 10px; margin-right: 10px;"> There are no clubs to be suspended or unsuspended. </view>
+
+<block wx:for="{{clubNames}}" wx:key="index" class="content">
+    <view class="row">
+        <view class="info">
+            <view class="lh"> {{clubNames[index]}} </view>
+            <view class="lb"> 社长: {{cnNames[index]}} {{classes[index]}} </view>
+            <view class="lb"> 指导老师: {{teachers[index]}} </view>
+            <view class="lb"> 邮箱: {{emails[index]}} </view>
+            <view class="lb"> 此社团被记录未使用教室的次数: {{unusedCounts[clubNames[index]]}} </view>
+            <view class="lb"> 此社团被记录使用后未清理教室的次数: {{uncleanedCounts[clubNames[index]]}} </view>
+        </view>
+        <view style="display: flex; align-items: center;">
+            <button class="btnDelete" bindtap="onBindSuspend" data-index="{{index}}" wx:if="{{statuses[index] == 1}}">Suspend</button>
+            <button class="btnDelete" bindtap="onBindUnsuspend" data-index="{{index}}" wx:if="{{statuses[index] == 0}}">Unsuspend</button>
+        </view>
+    </view>
+</block>

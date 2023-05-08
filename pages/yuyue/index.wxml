@@ -1,0 +1,40 @@
+<!--pages/yuyue/index.wxml-->
+
+<view class="container">
+  <view class="page-body">
+    <view class="page-title"> Classroom Booking </view>
+    <view class="table" style="margin-top: 20px;">
+      <view class="tr">
+        <view class="th">Room</view>
+        <view class="th" style="margin-left: -10px;">Month</view>
+        <view class="th" style="margin-left: -20px;">Date</view>
+        <view class="th" style="margin-left: 0px;">Time</view>
+      </view>
+    </view>
+    <picker-view class="picker" style="height: 250px; width: 90%; margin-top: -10px;" indicator-style="height: 50px;" value="{{value}}" bindchange="pickerBindChange">
+      <picker-view-column>
+        <view wx:for="{{rooms[floorN]}}" wx:key="index" style="line-height: 50px; font-size: 14px;">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column style="width: 15px; ">
+        <view wx:for="{{months}}" wx:key="index" style="line-height: 50px; font-size: 14px;">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column style="width: 15px; margin-left: -30px;">
+        <view wx:for="{{dates[sMonthIdx]}}" wx:key="index" style="line-height: 50px; font-size: 14px;">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column style="width: 15px; margin-left: -30px;">
+        <view wx:for="{{schedule}}" wx:key="index" style="line-height: 50px; font-size: 14px;">{{item}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+
+  <view style="position: absolute; width: 70%; text-align: center; margin-top: 10px;">
+    <view style="position: relative; left: 20%; text-align: center;">
+      <form  action="index.js">
+        <view class="text">I promise to clean up the classroom and put everything in place after the activities.</view>
+        <input type="text" placeholder="Signature" class="signature" bindinput="signatureBindInput"/>
+      </form>
+      <button bindtap ='booked' style="margin-top: 10px; margin-bottom: 20px;"> Reserve </button>
+    </view>
+  </view>
+
+</view>

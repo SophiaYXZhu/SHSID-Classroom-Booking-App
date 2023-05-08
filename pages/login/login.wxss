@@ -1,0 +1,44 @@
+/* pages/login/login.wxss */
+.iconimage-style{
+    margin-top:20%;
+    width : 300rpx ;
+    height : 300rpx ; 
+    border-radius : 50% ;
+    overflow:hidden ;
+}
+
+.input {
+    margin-bottom: 5px; 
+    width: 50%; 
+    border:1px dotted black; 
+    height: 30px; 
+    border-radius: 5px;
+    text-align:center;
+}
+
+.G {
+    margin-top: 5%;
+}
+
+.password {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.linkClub {
+    position: absolute;
+    bottom: 64px;
+    font-size: 13px;
+}
+
+.linkTeacher{
+    position: absolute;
+    bottom: 37px;
+    font-size: 13px;
+}
+
+.linkGradeTeacher{
+    position: absolute;
+    bottom: 10px;
+    font-size: 13px;
+}

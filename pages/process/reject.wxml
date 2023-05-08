@@ -1,0 +1,27 @@
+<!-- process/reject.wxml -->
+
+<view class="page">
+    
+    <view style="margin-top: 5%; font-size: larger;">Select reason for denial:</view>
+
+    <radio-group class="boxes">
+        <radio bindtap="onBindConflict">Conflict of time schedule with temporary school event</radio>
+        <radio bindtap="onBindDisciplinary">Past disciplinary action conducted by the club</radio>
+        <radio bindtap="onBindOther">Other</radio>
+    </radio-group>
+<!-- 
+    <button bindtap="onBindConflict" class="button" style="font-size: 15px; margin-top: 5%; margin-bottom: 2%; background-color: #FFF4C2;">Conflict of time schedule with temporary school event</button>
+    <button bindtap="onBindDisciplinary" class="button" style="font-size: 15px; margin-bottom: 2%; background-color: #FFF4C2;">Past disciplinary action conducted by the club</button>
+    <button bindtap="onBindOther" class="button" style="font-size: 15px; margin-bottom: 2%; background-color: #FFF4C2;">Other</button> -->
+
+    <view class="form" wx:if="{{reasonIdx == 2}}">
+        <form>
+            <label for="reason" class="row label">Please enter the reason for rejection</label>
+            <input type="text" bindinput="bindInputReason" placeholder="Enter reason here" class="row input"/>
+        </form>
+    </view>
+
+    <!-- <view wx:if="{{reasonIdx!=2}}" >Your selected reason is: {{reasonsList[reasonIdx]}}</view> -->
+
+    <button bindtap="onBindSubmit" class="button">Submit</button>
+</view>

@@ -1,0 +1,75 @@
+/* pages/yuyue/index.wxss */
+
+.page-title{
+    text-align: center;
+    padding-top: 5%;
+    font-size: 25px;
+  }
+
+.page-subtitle {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 20px;
+}
+
+.picker{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    display: flex;
+    flex-direction: column; 
+}
+  
+.tr {
+    display: flex;
+    flex-direction: row;
+}
+
+.th, .td { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    width: 25%;	
+    text-align: center; 
+    justify-content:center;  
+    align-items: center; 
+}
+
+.th {
+    font-weight: 800;
+}
+
+.text {
+    margin-top: 30px;
+    line-height: 150%;
+    color: black;
+    font-style: italic;
+    font-size: smaller;
+}
+
+.signature {
+    border: 1px dotted black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.label {
+    width: 50%;
+}
+
+.input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50;
+}

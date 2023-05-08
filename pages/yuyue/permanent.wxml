@@ -1,0 +1,42 @@
+<!--pages/yuyue/index.wxml-->
+
+<view class="container">
+  <view class="page-body">
+    <view class="page-title"> Classroom Booking </view>
+    <view class="table" style="margin-top: 20px;">
+      <view class="tr">
+        <view class="th">Room</view>
+        <view class="th" style="margin-left: 10%;">Weekday</view>
+        <view class="th" style="margin-left: 10%;">Time</view>
+      </view>
+    </view>
+    <picker-view class="picker" style="height: 250px;" indicator-style="height: 50px;" value="{{value}}" bindchange="pickerBindChange">
+      <picker-view-column>
+        <view wx:for="{{rooms[floorN]}}" wx:key="index" style="line-height: 50px; font-size: 14px;">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column style="width: 15px; margin-left: 5%;">
+        <view wx:for="{{weekdays}}" wx:key="index" style="line-height: 50px; font-size: 14px;">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column style="width: 15px; margin-left: -5%;">
+        <view wx:for="{{schedulePeriods[0]}}" wx:key="index" style="line-height: 50px; font-size: 14px;">{{item}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+
+  <!-- TODO: 填表上传信息+外实现一个cancel permant booking的功能再profile page上，指定permanent booking -->
+  <!-- <form action="index.js" style="margin-left: 5%; margin-right: 5%;">
+    <label for="class" class="row label">Weekday</label>
+    <input type="text" class="row input" style="margin-left: 5%; margin-right: 5%;" bindinput="bindWeekdayInput" placeholder="1 for Monday - 5 for Friday"/>
+  </form> -->
+
+  <view style="position: absolute; width: 70%; text-align: center; margin-top: 10px;">
+    <view style="position: relative; left: 20%; text-align: center;">
+      <form  action="index.js">
+        <view class="text">I promise to clean up the classroom and put everything in place after the activities.</view>
+        <input type="text" placeholder="Signature" class="signature" bindinput="signatureBindInput"/>
+      </form>
+      <button bindtap ='booked' style="margin-top: 10px; margin-bottom: 20px;"> Reserve </button>
+    </view>
+  </view>
+
+</view>

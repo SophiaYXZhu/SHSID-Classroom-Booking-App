@@ -1,0 +1,4 @@
+<!--pages/teacher/teacher.wxml-->
+
+<button bindtap="onTapActivate">激活社团账号</button>
+<button bindtap="onTapSuspend">暂停/重启社团账号</button>

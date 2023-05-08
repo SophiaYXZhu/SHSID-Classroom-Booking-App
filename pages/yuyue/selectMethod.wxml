@@ -1,0 +1,10 @@
+<!--pages/yuyue/selectMethod.wxml-->
+<view>
+    <view class="section" bindtap="bindPermanent">Permanent Booking</view>
+    <view class="section" bindtap="bindTemporary">Temporary Booking</view>
+    <view style="text-align: center; font-size:medium; margin-top: 5px; margin-left: 3%; margin-right: 3%;">Permanent Booking allows you to book by weekdays in the entire semester (i.e., Monday, Tuesday).</view>
+    <br/>
+    <view style="text-align: center; font-size:medium; margin-top: 5px; margin-left: 3%; margin-right: 3%;">Temporary Booking allows you to select a specific date for booking. Times with conflicts at a specific date will automatically be removed.</view>
+    <br/>
+    <view style="text-align: center; font-size:medium; margin-top: 5px; margin-left: 3%; margin-right: 3%;">Note: each club has a quota of at most 20 bookings.</view>
+</view>

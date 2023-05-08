@@ -1,0 +1,18 @@
+<!--pages/process/process.wxml-->
+<view wx:if="{{processListEmpty == true}}" class="lh"> There is no booking applications yet. </view>
+<block wx:for="{{rooms}}" wx:key="index">
+    <view class="row">
+        <view class="info">
+            <view class="lh"> {{buildings[index]}} {{rooms[index]}} </view>
+            <view class="lh"> {{dates[index]}} </view>
+            <view class="lh"> {{users[index]}} </view>
+            <view class="lb"> {{times[index]}} </view>
+            <view class="lb"> 此社团被记录未使用教室的次数: {{unusedCounts[users[index]]}} </view>
+            <view class="lb"> 此社团被记录使用后未清理教室的次数: {{uncleanedCounts[users[index]]}} </view>
+        </view>
+        <view class="btns">
+            <button class="btn accept" bindtap="onBindAccept" data-index="{{index}}"> Accept </button>
+            <button class="btn reject" bindtap="onBindReject" data-index="{{index}}"> Reject </button>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,26 @@
+<!--pages/teacher/check.wxml-->
+
+<view wx:if="{{processListEmpty == true}}" class="lh"> There is no applications to give feedback on yet. </view>
+<block wx:for="{{rooms}}" wx:key="index">
+    <view class="row">
+        <view class="info">
+            <view class="lh"> {{buildings[index]}} {{rooms[index]}} </view>
+            <view class="lh"> {{dates[index]}} </view>
+            <view class="lh"> {{users[index]}} </view>
+            <view class="lb"> {{times[index]}} </view>
+        </view>
+        <view class="page">
+        <view>学生是否使用了教室?</view>
+        <radio-group class="boxes">
+            <radio class="box yes" bindtap="tapUseYes" data-index="{{index}}" checked="{{checked}}" id="used_yes">是</radio>
+            <radio class="box no" bindtap="tapUseNo" data-index="{{index}}" checked="{{checked}}" id="used_no">否</radio>
+        </radio-group>
+        <view wx:if="{{used[index] == true}}">学生在活动后是否清理了教室?</view>
+        <radio-group class="boxes" wx:if="{{used[index] == true}}">
+            <radio class="box yes" bindtap="tapCleanYes" data-index="{{index}}" checked="{{checked}}" id="cleaned_yes">是</radio>
+            <radio class="box no" bindtap="tapCleanNo" data-index="{{index}}" checked="{{checked}}" id="cleaned_no">否</radio>
+        </radio-group>
+        <button class="button" bindtap="tapSubmit" data-index="{{index}}">提交</button>
+    </view>
+    </view>
+</block>

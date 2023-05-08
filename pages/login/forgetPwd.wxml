@@ -1,0 +1,20 @@
+<!--pages/login/forgetPwd.wxml-->
+
+<view class="page">
+    <view class="profile">Enter the fields below correctly to reset password:</view>
+    <view class="form">
+    <form action="forgetPwd.js">
+        <label for="clubName" class="row label">Club Name</label>
+        <input type="text" bindinput="bindInputClubName" class="row input"/>
+        <label for="cnName" class="row label">Leader Chinese Name</label>
+        <input type="text" class="row input" bindinput="bindInputCnName"/>
+        <label for="teacherName" class="row label">Leader Class</label>
+        <input type="text" bindinput="bindInputClass" class="row input"/>
+        <label for="email" class="row label">Leader Email Address</label>
+        <input type="text" class="row input" bindinput="bindInputEmail"/>
+        <label for="teacherName" class="row label">Club Teacher</label>
+        <input type="text" bindinput="bindInputTeacherName" class="row input"/>
+    </form>
+    </view>
+    <button bindtap="bindValidate" class="button">Validate Information</button>
+</view>

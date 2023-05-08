@@ -1,0 +1,74 @@
+/* pages/profile/edit.wxss */
+
+.profile {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: grey;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    margin-top: 30px;
+}
+
+.title {
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-right: 10px;
+    border-bottom: 30px;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.button {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.label {
+    width: 50%;
+}
+
+.input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50;
+}
+
+.page {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.warning {
+    color: blue;
+}
+
+.text {
+    margin-top: 30px;
+    line-height: 150%;
+    color: black;
+    font-style: italic;
+    font-size: smaller;
+}
+
+.form {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.inrow {
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.row {
+    margin-bottom: 10px;
+}

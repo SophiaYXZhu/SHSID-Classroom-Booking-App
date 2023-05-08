@@ -1,0 +1,13 @@
+<!--pages/index/index.wxml-->
+<block>
+    <view class="building">
+        <view class="ztb" bindtap="onZtbTap">
+            <view class="ztb-caption">ZTB</view>
+        </view>
+    </view>
+    <view class="building">
+        <view class="xmt" bindtap="onXmtTap">
+            <view class="xmt-caption">XMT</view>
+        </view>
+    </view>
+</block>

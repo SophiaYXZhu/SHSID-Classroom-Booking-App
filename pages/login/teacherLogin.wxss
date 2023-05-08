@@ -1,0 +1,16 @@
+/* pages/login/teacherLogin.wxss */
+
+.input {
+    width: 40%; 
+    margin-left: 30%; 
+    margin-bottom: 5px; 
+    border:1px dotted black; 
+    height: 30px; 
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.password {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

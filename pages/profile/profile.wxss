@@ -1,0 +1,81 @@
+/* pages/profile/profile.wxss */
+.row {
+    margin-top: 20px;
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid gray;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.btn {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btnDelete {
+    float: right;
+    text-align: center;
+    margin-bottom: 5px;
+    /* margin-left: 280px; */
+    /* margin-right: 5px; */
+}
+
+.lh {
+    display: block;
+    font-weight: bold;
+}
+
+.lb {
+    display: block;
+    font-size: 13px;
+}
+
+.status {
+    text-align: right;
+    margin-right: 5px; 
+}
+
+
+.profile {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: grey;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    margin-top: 30px;
+}
+
+.title {
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-right: 10px;
+    border-bottom: 30px;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.logout-button {
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-right: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.button {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}

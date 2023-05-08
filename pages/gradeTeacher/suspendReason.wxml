@@ -1,0 +1,22 @@
+<!--pages/gradeTeacher/suspendReason.wxml-->
+
+
+<view class="page">
+    
+    <view style="margin-top: 5%; font-size: larger;">Select reason for suspension:</view>
+
+    <radio-group class="boxes">
+        <radio bindtap="onBindInfo">Inauthentic account information</radio>
+        <radio bindtap="onBindDisciplinary">Past disciplinary action conducted by the club</radio>
+        <radio bindtap="onBindOther">Other</radio>
+    </radio-group>
+
+    <view class="form" wx:if="{{reasonIdx == 2}}">
+        <form>
+            <label for="reason" class="row label">Please enter the reason for suspension</label>
+            <input type="text" bindinput="bindInputReason" placeholder="Enter reason here" class="row input"/>
+        </form>
+    </view>
+
+    <button bindtap="onBindSubmit" class="button">Submit</button>
+</view>

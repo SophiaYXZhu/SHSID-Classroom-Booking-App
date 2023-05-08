@@ -1,0 +1,20 @@
+<!--pages/login/login.wxml-->
+<block>
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 10px;">
+        <image src = "https://www.teachaway.com/sites/default/files/shang_zhong_logo.png" class = ".iconimage-style" ></image>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 10px;">
+        <input class="input G" type="text" placeholder="Club name" bindinput="bindGInput"/>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center; margin-top:-10px">
+        <input class="input password" type="password" placeholder="Password" bindinput="bindPwdInput"/>
+    </div>
+    <!-- <br/> -->
+    <button style="margin-top: 30px; margin-bottom: 5px; width: 40%;" bindtap="clubSubmit">Login</button>
+    <view bindtap="forgetPassword" style="text-decoration: underline; text-align: center;">Forget password?</view>
+    <div style="margin-top: 5px; text-align: center; align-items: center; justify-content: center; display: flex;">
+      <view class="linkClub" bindtap="registration" style="text-decoration: underline;">New Club Registration</view>
+      <view class="linkTeacher" bindtap="teacherLogin" style="text-decoration: underline; ">Receptions Teacher Login</view>
+      <view class="linkGradeTeacher" bindtap="gradeTeacherLogin" style="text-decoration: underline; ">Grade Director Teacher Login</view>
+    </div>
+</block>

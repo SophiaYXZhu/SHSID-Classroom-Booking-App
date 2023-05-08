@@ -1,0 +1,4 @@
+<!--pages/teacher/teacher.wxml-->
+
+<button bindtap="onTapReserve">处理预定</button>
+<button bindtap="onTapFeedback">预定反馈</button>

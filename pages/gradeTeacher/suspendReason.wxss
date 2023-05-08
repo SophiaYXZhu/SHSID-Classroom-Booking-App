@@ -1,0 +1,41 @@
+/* pages/gradeTeacher/suspendReason.wxss */
+
+.form {
+    margin-top: 10px;
+}
+
+.inrow {
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.label {
+    width: 50%;
+}
+
+.input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50;
+}
+
+.page {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.warning {
+    color: blue;
+}
+
+.text {
+    margin-top: 30px;
+    line-height: 150%;
+    color: black;
+    font-style: italic;
+    font-size: smaller;
+}

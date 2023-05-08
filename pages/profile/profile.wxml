@@ -1,0 +1,37 @@
+<!--pages/profile/profile.wxml-->
+
+<view class="profile">{{club}}</view>
+
+<!-- <view class="title"> Edit Profile </view> -->
+<button bindtap="onBindEdit" class="button"> Edit / View Profile </button>
+
+<view class="title"> History </view>
+
+<block wx:for="{{rooms}}" wx:key="index" class="content">
+    <view class="row">
+        <view class="info">
+            <view class="lh"> {{buildings[index]}} </view>
+            <view> {{rooms[index]}} {{dates[index]}} </view>
+            <view class="lb"> {{timings[index]}} </view>
+        </view>
+        <view class="Delete">
+            <button wx:if="{{teacherStatus[index] == -1}}" class="btnDelete" bindtap="onBindDelete" data-index="{{index}}">Delete</button>
+        </view>
+        <view class="status">
+            <view wx:if="{{timeStatus[index] == 0 && teacherStatus[index] == -1}}"> Pending </view>
+            <view wx:if="{{timeStatus[index] == 1 && teacherStatus[index] == -1}}"> Current Event </view>
+            <view wx:if="{{timeStatus[index] == 1 && teacherStatus[index] == -1}}" class="lb"> Note: Although the event has started, no teachers have confirmed your booking application yet. Please contact the receptions at your building after the event. </view>
+            <view wx:if="{{timeStatus[index] == 2 && teacherStatus[index] == -1}}"> Event Ended </view>
+            <view wx:if="{{timeStatus[index] == 2 && teacherStatus[index] == -1}}" class="lb"> Note: Although the event has ended, no teachers have confirmed your booking application yet. Please contact the receptions at your building to confirm your club activity status. </view>
+            <view wx:if="{{timeStatus[index] == 0 && teacherStatus[index] == 1}}"> Accepted </view>
+            <view wx:if="{{teacherStatus[index] == 0}}"> Denied </view>
+            <view wx:if="{{teacherStatus[index] == 0}}" class="lb"> Your booking application is denied for the following reason: {{rejectReason[index]}} </view>
+            <view wx:if="{{timeStatus[index] == 1 && teacherStatus[index] == 1}}"> Current Event </view>
+            <view wx:if="{{timeStatus[index] == 2 && teacherStatus[index] == 1}}"> Event Ended </view>
+            <view wx:if="{{cleaned[index] == false}}" class="lb"> Feedback: You are reported for not cleaning up your classroom. This behavior is documented. If you have any objections, please find the reception teachers at your building.</view>
+            <view wx:if="{{used[index] == false}}" class="lb"> Feedback: You are reported for not using the classroom you booked. This behavior is documented. If you have any objections, please find the reception teachers at your building.</view>
+        </view>
+    </view>
+</block>
+
+<button bindtap="onBindLogout" class="logout-button"> Logout </button>

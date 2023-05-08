@@ -1,0 +1,15 @@
+<!--pages/login/pwdReset.wxml-->
+
+
+<view class="page">
+    <view class="profile">Enter the fields below correctly to reset password:</view>
+    <view class="form">
+    <form action="forgetPwd.js">
+        <label for="clubName" class="row label">New Password</label>
+        <input type="safe-password" bindinput="bindInputPwd" class="row input"/>
+        <label for="cnName" class="row label">Confirm New Password</label>
+        <input type="safe-password" class="row input" bindinput="bindInputConfirm"/>
+    </form>
+    </view>
+    <button bindtap="onBindSubmit" class="button">Update Password</button>
+</view>

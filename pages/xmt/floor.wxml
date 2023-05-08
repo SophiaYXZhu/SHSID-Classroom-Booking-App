@@ -1,0 +1,6 @@
+<!--pages/ztb/floor.wxml-->
+<view>
+    <view class="section" bindtap="onF1Tap">F1</view>
+    <view class="section" bindtap="onF2Tap">F2</view>
+    <view class="section" bindtap="onF3Tap">F3</view>
+</view>
