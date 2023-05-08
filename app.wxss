@@ -1,0 +1,6 @@
+.sys_caidan{height: 40px;display: flex;position: fixed;bottom: 0;width: 100%;justify-items:center; border-top: 1px solid gainsboro;padding: 3px;
+    background-color: #fafafa;}
+    .sys_caidan_xiangmu{width: 25%;display: flex;flex-direction: column;align-items: center;}
+    .sys_caidan_xiangmu_img{width: 22px;height: 22px;}
+    .sys_caidan_xiangmu_txt{font-size: 14px; color: dimgray;}
+    .sys_caidan_xiangmu_xuanzhong{color: orangered;}

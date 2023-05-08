@@ -1,0 +1,52 @@
+{
+    "cloud":true,
+    "pages": [
+        "pages/login/login",
+        "pages/login/registration",
+        "pages/login/teacherLogin",
+        "pages/login/gradeTeacherLogin",
+        "pages/login/forgetPwd",
+        "pages/login/pwdReset",
+        "pages/index/index",
+        "pages/ztb/floor",
+        "pages/xmt/floor",
+        "pages/yuyue/selectMethod",
+        "pages/yuyue/index",
+        "pages/yuyue/permanent",
+        "pages/profile/profile",
+        "pages/teacher/teacher",
+        "pages/teacher/check",
+        "pages/gradeTeacher/teacher",
+        "pages/gradeTeacher/activate",
+        "pages/gradeTeacher/suspend",
+        "pages/gradeTeacher/suspendReason",
+        "pages/process/process",
+        "pages/process/reject",
+        "pages/profile/edit"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#eee",
+        "navigationBarTitleText": "Classroom Booking",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#999999",
+        "selectedColor": "#000000",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "Booking",
+                "iconPath": "images/icon_bookingB.png",
+                "selectedIconPath": "images/icon_bookingR.png"
+            },
+            {
+                "pagePath": "pages/profile/profile",
+                "text": "Profile",
+                "iconPath": "images/icon_profileB.png",
+                "selectedIconPath": "images/icon_profileR.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}
